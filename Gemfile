@@ -10,6 +10,8 @@ gem "jquery-rails", "~> 4.3.3"
 gem "rails-controller-testing", "~> 1.0.2"
 gem "bcrypt", "~> 3.1.12"
 gem "faker", "~> 1.7.3"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 gem "will_paginate", "~> 3.1.6"
 gem "bootstrap-will_paginate", "~> 1.0.0"
 # Use sqlite3 as the database for Active Record
@@ -66,7 +68,8 @@ group :test do
 end
 
 group :production do
-  # gem "pg"
+  # gem "pg", "0.20.0"
+  # gem "fog", "1.42"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
